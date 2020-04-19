@@ -1,0 +1,14 @@
+kafka:
+    topics:
+        - webchecker
+    bootstrap_servers: DOMAIN:PORT
+    security_protocol: SSL
+    ssl_cafile: ca.crt
+    ssl_certfile: client.crt
+    ssl_keyfile: client.key
+
+postgresql:
+    uri: postgres://USER:PASSWORD@DOMAIN:PORT/DATABASE?sslmode=verify-full
+    threads: 8
+
+debug: false
